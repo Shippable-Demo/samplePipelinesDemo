@@ -15,10 +15,10 @@ integrations:
 #    - integrationName: "shipdeploy"
     - integrationName: "myDockerIntegration"
       type: docker
-#  notifications:
-#    - integrationName: "triggerPipelinesDemo"
-#      type: webhook
-#      payload:
-#        - versionName=$BRANCH.$BUILD_NUMBER
-#      on_success: always
-#      on_failure: never
+  notifications:
+    - integrationName: "triggerDemoPipeline"
+      type: webhook
+      payload:
+        - versionName=$BRANCH.$BUILD_NUMBER
+      on_success: always
+      on_failure: never
